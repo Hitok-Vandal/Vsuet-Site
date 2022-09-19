@@ -1,0 +1,44 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    grid-area: info;
+}
+
+.hobbi {
+    grid-area: hobbi;
+}
+.image {
+    grid-area: image;
+}
+
+dt, dd {
+    display: inline;
+    color: aliceblue;
+}
+dt::after {
+    content: ':';
+    color: aliceblue;
+}
+
+body{
+    background-color: #000000;
+}
+h2 {
+    color: aliceblue;
+}
+p {
+    background-color: maroon;
+    color: white;
+}
+table {
+
+    color: aliceblue;
+}
