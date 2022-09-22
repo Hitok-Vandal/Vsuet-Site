@@ -1,0 +1,68 @@
+@import url(default.css);
+
+.header > :nth-child(1) {
+    background: #7987ac !important;
+}
+
+.header > :nth-child(2) {
+    background: #4f628d !important;
+}
+
+.header > :nth-child(3) {
+    background: #2f4173 !important;
+}
+
+.header > :nth-child(4) {
+    background: #162954 !important;
+}
+
+.header > :nth-child(5) {
+    background: #07153a !important;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 1000px;
+    border-radius: 14px;
+    background-clip: padding-box;
+    overflow: hidden;
+}
+
+button {
+    margin-top:16px;
+}
+
+.wrapper > div {
+    display: contents;
+}
+
+.wrapper > div > * {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.wrapper > div:nth-child(odd) > :nth-child(odd) {
+    background: #ffffff;
+}
+
+.wrapper > div:nth-child(odd) > :nth-child(even) {
+    background: rgba(235, 235, 235, 0.38);
+}
+
+.wrapper > div:nth-child(even) > :nth-child(odd) {
+    background: rgba(235, 235, 235, 0.38);
+}
+
+.wrapper > div:nth-child(even) > :nth-child(even) {
+    background: rgba(155, 153, 153, 0.3);
+}
+
+.header {
+    color: #fff;
+    font-weight: bold;
+}
